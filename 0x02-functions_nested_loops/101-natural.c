@@ -1,17 +1,29 @@
 #include <stdio.h>
 
+/**
+ * main - Prints the first 52 fib
+ * Return: 0 (succss)
+ */
+
 int main(void)
 {
-	int limit = 1024;
-	int sum = 0;
+	int i = 0;
+	long j = 1, k = 2;
 
-	for (int i = 1; i < limit; i++)
+	while (i < 50)
 	{
-		if (i % 3 == 0 || i % 5 == 0)
+		if (i == 0)
+			printf("%ld", j);
+		else if (i ==1)
+			printf(", %ld" k);
+		else
 		{
-			sum += i;
+			k += j;
+			j = k -j;
+			printf(", %ld" k);
 		}
+		++i;
 	}
-	printf("The sum of all multiples of 3 or 5 below %d is: %d\n", limit, sum);
+	printf("\n");
 	return (0);
 }
