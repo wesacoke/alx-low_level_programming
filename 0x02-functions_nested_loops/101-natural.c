@@ -1,21 +1,17 @@
 #include <stdio.h>
 
-/**
- * main - Prints first 50 Fibonacci number
- *
- * Return: Always 0.
- */
 int main(void)
 {
-	int count;
-	unsigned long fib1 = 0, fib2 = 1, sum;
+	int limit = 1024;
+	int sum = 0;
 
-	for (count = 2; count < 50; count++)
+	for (int i = 1; i < limit; i++)
 	{
-		sum = fib1 + fib2;
-		fib1 = fib2;
-		fib2 = sum;
+		if (i % 3 == 0 || i % 5 == 0)
+		{
+			sum += i;
+		}
 	}
-	printf("%lu\n", fib2);
+	printf("The sum of all multiples of 3 or 5 below %d is: %d\n", limit, sum);
 	return (0);
 }
