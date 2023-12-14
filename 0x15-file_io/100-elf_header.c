@@ -225,6 +225,7 @@ void print_type(unsigned int e_type, unsigned char *e_ident)
  * @e_entry: The address of the ELF entry point.
  * @e_ident: A pointer to an array containing the ELF class.
  */
+
 void print_entry(unsigned long int e_entry, unsigned char *e_ident)
 {
 	printf(" Entry point address: ");
@@ -249,6 +250,7 @@ void print_entry(unsigned long int e_entry, unsigned char *e_ident)
  *
  * Description: If the file cannot be closed - exit code 98.
  */
+
 void close_elf(int elf)
 {
 	if (close(elf) == -1)
