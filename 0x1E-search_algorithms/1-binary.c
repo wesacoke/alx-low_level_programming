@@ -1,6 +1,7 @@
 #include "search_algos.h"
 /**
- * Binary_search -searches for a value in a sorted array.
+ * binary_search -searches for a value in a sorted array of integers
+ *using the binary search algorithm.
  *
  * @array: A pointer to the fist element of array to be searched
  *
@@ -9,7 +10,7 @@
  * @value: Value being searched for
  *
  * Return: If the value is not present or the array is NULL, -1.
- * otherwise, the index where the value is located.
+ *otherwise, the index where the value is located.
  */
 int binary_search(int *array, size_t size, int value)
 {
