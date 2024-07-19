@@ -1,9 +1,10 @@
 #include "search_algos.h"
 /**
- * linear_search- Linear search algorith in C an array of integers
+ * linear_search-searches for a value in an array of integers
  * @array: List of integers to search
  * @size: The size of integers provided
  * @value: The actual value to search for
+ * Return: If the array is not present or NULL.
  */
 int linear_search(int *array, size_t size, int value)
 {
